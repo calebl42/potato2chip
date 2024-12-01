@@ -42,5 +42,6 @@ def gen_pyrtl(model):
             print("unknown layer operation")
             return
         
-    f.write('y = pyrtl.Output(8, \'y\')')
+    f.write('y = pyrtl.Output(8, \'y\')\n')
+    f.write(f'y <<= mx.argmax({edge_mx})')
     f.close()
