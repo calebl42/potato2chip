@@ -5,7 +5,7 @@ How to use:
      model_scripted = torch.jit.script(model) # Export to TorchScript
      model_scripted.save('model_scripted.pt') # Save
      ```
-  2. Import converter into your file and load your saved model:
+  2. Import the converter into your file and load your saved model:
      ```python
      import converter
      ...
