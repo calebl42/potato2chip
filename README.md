@@ -1,4 +1,4 @@
-# Automated convertion for PyTorch models to PyRTL 
+# Automated convertion from PyTorch models to PyRTL 
 How to use:
   1. Save your PyTorch model using TorchScript to your working directory (recommended method):
      ```python
