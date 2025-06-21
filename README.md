@@ -1,5 +1,5 @@
-# Automated convertion from PyTorch models to PyRTL 
-How to use:
+# Introducting Potato2Chip: A Tool for Automated convertion from PyTorch models to PyRTL 
+How to use potato2chip:
   1. Save your PyTorch model using TorchScript to your working directory (recommended method):
      ```python
      model_scripted = torch.jit.script(model) # Export to TorchScript
@@ -11,5 +11,5 @@ How to use:
      ...
      model = torch.jit.load('model_scripted.pt')
      ```
-  3. Add the line ```converter.gen_pyrtl(model)``` and then run the program
+  3. Execute ```converter.gen_pyrtl(model)``` 
   4. You will see the outputed pyrtl code in 'output.py'
