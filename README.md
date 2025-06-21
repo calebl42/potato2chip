@@ -11,9 +11,9 @@ How to use potato2chip:
      ...
      model = torch.jit.load('model_scripted.pt')
      ```
-  4. Now add the line 
+  3. Now add the line 
      ```python
      converter.gen_pyrtl(model)
      ```
-     and execute your script
-  6. You will see the outputed pyrtl code in 'output.py'
+  4. Execute your script
+  5. You will see the outputed pyrtl code in 'output.py'
